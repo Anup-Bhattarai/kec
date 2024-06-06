@@ -40,7 +40,7 @@ console.log(employee6.department);
 // Expected output:
 // { type: 'box', dimensions: { length: 10, width: 8, height: 6 }, size: 'large' }
 const box7 = { type: 'box', dimensions: { length: 10, width: 8, height: 6 } };
-let ad=box7.size="large";
+ox7.size="large";
 console.log(box7);
 
 // Q8: Concatenate the 'firstName' and 'lastName' properties of the 'person' object with a space in between.
