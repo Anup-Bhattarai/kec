@@ -3,4 +3,3 @@ const arr = [3,5,1,2,9,12]
 
 let newnum = arr.filter((arr) => (arr%3==0));
 console.log(newnum); 
-console.log(newnum)
