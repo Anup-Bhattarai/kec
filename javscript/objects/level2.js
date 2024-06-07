@@ -26,7 +26,7 @@ console.log(product3);
 // Expected output:
 // false
 const car4 = { make: 'Toyota', year: 2021 };
-if(car4.make & car4.year & car4.model ==car4)
+if(car4.make && car4.year && car4.model ==car4)
     {
         console.log("yes ")
     }
@@ -72,7 +72,7 @@ console.log(arr3)
 // Expected output:
 // false
 const book9 = { title: 'JavaScript Basics', author: 'John Smith', year: 2020 };
-if(book9.title&book9.author&book9.year==null)
+if(book9.title&&book9.author&&book9.year==null)
     {
         console.log("true")
     }
