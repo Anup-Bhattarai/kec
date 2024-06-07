@@ -43,20 +43,20 @@ console.log(stu(students3));
 
 // Q4: Create a function that takes the 'details' object and checks if all properties have values.
 // Expected output for details4: true
+
 const details4 = { name: 'John', age: 25, city: 'New York' };
-
-
 function check(a) {
     if (a.name !== undefined && a.age !== undefined && a.city !== undefined && 
         a.name !== null && a.age !== null && a.city !== null) {
-        console.log("true");
+        return true;
     } else {
-        console.log("false");
+        return false;
     }
 }
 
 
-console.log(check(details4)); 
+console.log(check(details4));
+
 
 
 // Q5: Create a function that takes the 'products' object and returns the average price of all products.
@@ -76,22 +76,17 @@ console.log(avg(products5))
 // Expected output for scores6: 95
 const scores6 = { math: 85, science: 90, english: 95 };
 
-function highScore(a)
-{
-
-    if(a.math>a.science>a.english)
-        {
-            console.log(a.math)
-        }
-        else if(a.science>a.math>a.english)
-            {
-                console.log(a.science)
-            }
-            else{
-                console.log(a.english)
-            }
+function highScore(a) {
+    if (a.math > a.science && a.math > a.english) {
+        return a.math;
+    } else if (a.science > a.math && a.science > a.english) {
+        return a.science;
+    } else {
+        return a.english;
+    }
 }
-console.log(highScore(scores6))
+
+console.log(highScore(scores6)); 
 
 
 // Q7: Create a function that takes the 'employees' object and returns the average salary.
