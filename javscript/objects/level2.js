@@ -26,21 +26,20 @@ console.log(product3);
 // Expected output:
 // false
 const car4 = { make: 'Toyota', year: 2021 };
-if(car4.make && car4.year && car4.model ==car4)
-    {
-        console.log("yes ")
-    }
-    else{
-        console.log("no");
-    }
+if ('make' in car4 && 'model' in car4 && 'year' in car4) {
+    console.log("true");
+} else {
+    console.log("false");
+}
+
 
     // Q5: Create a copy of the 'student' object without modifying the original object.
 // Expected output:
 // { name: 'Alice', age: 20, grade: 'A' }
 const student5 = { name: 'Alice', age: 20, grade: 'A' };
-const {...cl}=student5
-ab={...cl}
-console.log(ab);
+const copiedStudent = { ...student5 };
+console.log(copiedStudent);
+
 
 // Q6: Check if the 'address' property in the 'user' object is a string.
 // Expected output:
@@ -72,13 +71,12 @@ console.log(arr3)
 // Expected output:
 // false
 const book9 = { title: 'JavaScript Basics', author: 'John Smith', year: 2020 };
-if(book9.title&&book9.author&&book9.year==null)
-    {
-        console.log("true")
-    }
-    else{
-        console.log("false")
-    }
+if (book9.title === null || book9.author === null || book9.year === null) {
+    console.log("true");
+} else {
+    console.log("false");
+}
+
 
     // Q10: Reverse the 'fullName' property value in the 'person' object.
 // Expected output:
