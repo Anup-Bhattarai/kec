@@ -105,12 +105,14 @@ console.log(emp(employees7))
 // Expected output for data8: [25, 'John', 'New York']
 const data8 = { name: 'John', age: 25, city: 'New York' };
 
-function asc(a)
-{
-    arr1=Object.values(a)
-    console.log(arr1.sort())
+
+
+function asc(a) {
+    let arr1 = Object.values(a);
+    return arr1.sort();
 }
-console.log(asc(data8))
+console.log(asc(data8));
+
 
 
 // Q9: Create a function that takes the 'order' object and calculates the total cost based on quantity and price.
