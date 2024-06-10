@@ -44,6 +44,8 @@ console.log(stu(students3));
 // Q4: Create a function that takes the 'details' object and checks if all properties have values.
 // Expected output for details4: true
 
+
+//yo question lai 2 methods le garya xa 
 const details4 = { name: 'John', age: 25, city: 'New York' };
 function check(a) {
     if (a.name !== undefined && a.age !== undefined && a.city !== undefined && 
@@ -52,6 +54,16 @@ function check(a) {
     } else {
         return false;
     }
+}
+
+console.log(check(details4));
+
+///////////OR
+
+
+function checkNull(a){
+    return Object.values(a).every( a => Boolean(a))
+    
 }
 
 
@@ -76,7 +88,7 @@ console.log(avg(products5))
 // Expected output for scores6: 95
 const scores6 = { math: 85, science: 90, english: 95 };
 
-function highScore(a) {
+function high(a) {
     if (a.math > a.science && a.math > a.english) {
         return a.math;
     } else if (a.science > a.math && a.science > a.english) {
@@ -85,6 +97,17 @@ function highScore(a) {
         return a.english;
     }
 }
+console.log(high(scores6));  
+
+////////OR
+
+
+
+function highScore(a) {
+    return Math.max(...Object.values(a));
+}
+
+ 
 
 console.log(highScore(scores6)); 
 
